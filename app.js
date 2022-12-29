@@ -62,7 +62,7 @@ app.use(session({
     },
     store: MongoStore.create(
         {
-          mongoUrl: db._connectionString,
+          mongoUrl: 'mongodb://127.0.0.1:27017/user-auth',
           autoRemove: 'disabled',
         },
         function (err) {
